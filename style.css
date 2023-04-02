@@ -5,3 +5,60 @@ body {
     background: black;
     color: white;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 100px;
+
+}
+
+#navbar {
+    
+}
+
+.nav-list{
+      
+}
+
+li {
+    
+
+}
+
+a{
+
+}
+
+button {
+
+}
+
+li, a, button {
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+#get-app {
+
+}
+
+#cart {
+
+}
+
+.container {
+
+}
+
+.order {
+
+}
+
+
+
