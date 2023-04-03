@@ -53,9 +53,6 @@ li {
     
 }
 
-a{
-
-}
 
 button {
     border-radius: 1em;
@@ -90,9 +87,8 @@ li, a, #cart {
 #menu-option {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 25px;
-    row-gap: 25px;
-    gap: 5em;
+    column-gap: 5em;
+    row-gap: 10em;
     justify-items: center;
     padding-top: 8em;
 
