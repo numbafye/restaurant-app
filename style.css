@@ -1,32 +1,56 @@
+@font-face {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: myFont;
+    src: url(Baumans-Regular.ttf)
+}
+
+:root {
+    --primary-color: rgb(247,33,81);
+    --bg-color: hsl(215,59%,9%);
+    --secondary-color: rgb(193,193,193);
+    --accent-color: rgb(212, 212, 212);
+    --box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+
 body {
     margin: 0;
     padding: 0;
     color-scheme: dark;
-    background: black;
-    color: white;
+    color: var(--accent-color);
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: myFont;
+    background-color: var(--bg-color);
 }
 
 header {
     display: flex;
     justify-content: space-between;
+    height: 5em;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: var(--bg-color);
+    overflow: hidden;
 }
 
 #logo {
     width: 100px;
-
-}
-
-#navbar {
-    
+    height: auto;
+    border-radius: 10em;
 }
 
 .nav-list{
-      
+      display: flex;
+      gap: 10px;
+      padding-top: 25px;
+      padding-right: 100px;
+     
 }
 
 li {
+    text-align: left;
     
-
 }
 
 a{
@@ -34,29 +58,43 @@ a{
 }
 
 button {
-
+    border-radius: 1em;
+    border: 2px solid var(--bg-color);
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    display: block;
 }
 
-li, a, button {
+li, a, #cart {
     text-decoration: none;
     list-style: none;
-}
-
-
-
-#get-app {
-
+    color: var(--primary-color);
 }
 
 #cart {
-
+    margin: 3em 3em;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .container {
+    margin: 7em 2em;
 
 }
 
 .order {
+
+}
+
+#menu-option {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+    row-gap: 25px;
+    gap: 5em;
+    justify-items: center;
+    padding-top: 8em;
 
 }
 
