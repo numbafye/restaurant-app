@@ -87,6 +87,7 @@ h1 {
     display: grid;
     grid-template-rows: minmax(2em, 3em);
     justify-items: center;
+    /* add bg svg */
 }
 
 button {
