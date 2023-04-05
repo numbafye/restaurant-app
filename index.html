@@ -1,73 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant app</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!--LOGO,NAVBAR, ORDER BTNS -->
-    <header>
-        <a href="index.html"><img id="logo" src="assets\logo-color.png" alt="logo"/></a>
-        <nav>
-            <ul class="nav-list">
-               <li><a href="menu.html">Menu</a></li> 
-               <li><a href="#deal-list">Deals</a></li> 
-               <li><a href="career.html">Career</a></li> 
-            </ul>
-        </nav>
-       <button title="Cart" id="cart" type="button"><i class="fa-solid fa-cart-shopping"></i></i>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Restaurant app</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--LOGO,NAVBAR, ORDER BTNS -->
+        <header>
+            <a href="index.html"><img id="logo" src="assets\logo-color.png" alt="logo"/></a>
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="menu.html">Menu</a></li> 
+                        <li><a href="#deal-list">Deals</a></li> 
+                        <li><a href="career.html">Career</a></li> 
+                    </ul>
+                </nav>
+            <button title="Cart" id="cart" type="button"><i class="fa-solid fa-cart-shopping"></i></i>
+        </header>
 
-    <div class="container">
-        <div class="order">
-            <h1>Order Now!</h1>
-            <h2>The Best Food in the Suburgs</h2>
-            <p>Set up Hours of business script to track the day and display the hours accordingly here</p>
-            <button type="button" onclick="">Pick Up</button>
-            <button type="button" onclick="">Delivery</button>
-        </div>
-        
-        <!-- PULSATING JS OR CSS ANIMATION? ON TEXT LIKE FLICKERING LIGHT? -->
-        <section class="flash-border">
-        <div class="new-meal">
-            <h1 class="flash-text">Try Our New Open-Faced Pizza Burger!</h1>
-            <h2>Open-faced pizza burgers are served on split English muffins with ground beef, seasoned marinara sauce, and plenty of melted mozzarella cheese.</h2>
-        </div>
-        </section>
-        <!-- JS CAROUSEL & CSS WEBKIT -->
-        <section class="wavy">
-        <div id="carousel-menu">
-            <h1>Menu</h1>
-            <h2>Top Picks</h2>
-            <div class="menu-items">
-                <div class="menu">Burger</div>
-                <div class="menu">Burger2</div>
-                <div class="menu">Burger3</div>
-                <div class="menu">Burger4</div>
-                <div class="menu">Pizza1</div>
-                <div class="menu">Pizza2</div>
-            </div>
-        </div>
-        </section>
-        <!-- HOME PAGE DEALS LINK LEADS HERE TO PREVIEW NEW DEALS -->
-        <div class="deals" id="deal-list">
-            <h1>Deals and Offers!</h1>
-            <p>Show 2 deals<a href="deals.html">See more...</a></p>
-        </div>
-        <footer>
-            <div class="foot">
+        <main class="container">
+            <!-- ORDER BUTTON TO MENU + JS DATE API-->
+            <h1>The Best Burgiza's in the Suburgs</h1>
+            <section class="order">
+                <h2>Order Now!</h2>
+                <p>Set up Hours of business script to track the day and display the hours accordingly here</p>
+                <button type="button" onclick="">Pick Up</button>
+                <button type="button" onclick="">Delivery</button>
+            </section>
+            <!-- PULSATING JS OR CSS ANIMATION? ON TEXT LIKE FLICKERING LIGHT? -->
+            <section class="new-meal">
+                <h2 class="flash-text">Try Our New Open-Faced Pizza Burger!</h2>
+                <h3>Open-faced pizza burgers are served on split English muffins with ground beef, seasoned marinara sauce, and plenty of melted mozzarella cheese.</h3>
+            </section>
+            <!-- JS CAROUSEL & CSS WEBKIT -->
+            <section class="wavy">
+                <h2>Menu</h2>
+                <h3>Top Picks</h3>
+                    <div class="menu-items">
+                        <div class="menu">Burger</div>
+                        <div class="menu">Burger2</div>
+                        <div class="menu">Burger3</div>
+                        <div class="menu">Burger4</div>
+                        <div class="menu">Pizza1</div>
+                        <div class="menu">Pizza2</div>
+                    </div>
+            </section>
+            <!-- HOME PAGE DEALS LINK LEADS HERE TO PREVIEW NEW DEALS -->
+            <section class="deals">
+                <h2>Deals and Offers!</h2>
+                <p>Show 2 deals <a href="deals.html">See more...</a></p>
+            </section>
+
+            <footer class="foot">
                 <h4>About</h4>
                 <h4>copyright symbol 2023 Burgiza</h4>
-                <div class="socials">
-                    <p>social media icon links and phone #</p>
-                </div>
-            </div>
-        </footer>
-    </div>
+                    <div class="socials">
+                        <p>social media icon links and phone #</p>
+                    </div>
+            </footer>
+        </main>
 
-</body>
+    </body>
 </html>
