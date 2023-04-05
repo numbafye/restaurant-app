@@ -33,16 +33,6 @@ header {
     overflow: hidden;
 }
 
-section {
-    /* visual border */
-    border: 1px black solid;
-    padding: 3em;
-}
-
-h1 {
-    text-align: center;
-}
-
 #logo {
     width: 70px;
     margin-left: 10px;
@@ -78,20 +68,24 @@ li, a, #cart {
 }
 
 /* PAGE CONTENT */
+section {
+    /* visual border */
+    border: 1px black solid;
+    padding: 3em;
+}
 
 .container {
     margin: 7em 2em;
+}
+
+h1 {
+    text-align: center;
 }
 
 .order {
     display: grid;
     grid-template-rows: minmax(2em, 3em);
     justify-items: center;
-    /* placeholder img */
-    background-image: url("assets/main-banner.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-
 }
 
 button {
@@ -139,5 +133,8 @@ img {
     padding-top: 8em;
 }
 
+
+/* mask imgs in menu to fade overflow */
+/* https://pqina.nl/blog/fade-out-overflow-using-css-mask-image/ */
 
 
