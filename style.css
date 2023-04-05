@@ -76,6 +76,8 @@ section {
 
 .container-fluid {
 margin-top: 5em;
+padding: 0;
+
 }
 
 h1 {
