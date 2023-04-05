@@ -77,9 +77,10 @@ li, a, #cart {
     cursor: pointer;
 }
 
+/* PAGE CONTENT */
+
 .container {
     margin: 7em 2em;
-
 }
 
 .order {
@@ -90,6 +91,7 @@ li, a, #cart {
     background-image: url("assets/main-banner.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+
 }
 
 button {
@@ -121,10 +123,12 @@ img {
     border-radius: 5px;
 }
 
-/* wavy border for menu */
+/* wavy border for menu in index.html */
 .wavy {
     
 }
+
+/* MENU PAGE */
 
 #menu-option {
     display: grid;
