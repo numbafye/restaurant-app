@@ -6,16 +6,16 @@
 
 :root {
     --primary-color: rgb(247,33,81);
-    --bg-color: hsl(215,59%,9%);
+    --accent-color: hsl(215,59%,9%);
     --secondary-color: rgb(193,193,193);
-    --accent-color: rgb(212, 212, 212);
+    --bg-color: rgb(252, 250, 250);
     --box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 body {
     margin: 0;
     padding: 0;
-    color-scheme: dark;
+    color-scheme: light;
     color: var(--accent-color);
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-family: myFont;
@@ -33,12 +33,20 @@ header {
     overflow: hidden;
 }
 
-h1 {
+section {
+    /* visual border */
+    border: 1px black solid;
+    padding: 5em;
+}
 
+h1 {
+    text-align: center;
 }
 
 #logo {
-    width: 100px;
+    width: 70px;
+    margin-left: 10px;
+    margin-top: 5px;
     height: auto;
     border-radius: 10em;
 }
@@ -56,15 +64,6 @@ li {
     
 }
 
-
-button {
-    border-radius: 1em;
-    border: 2px solid var(--bg-color);
-    background-color: var(--primary-color);
-    color: var(--bg-color);
-    display: block;
-}
-
 li, a, #cart {
     text-decoration: none;
     list-style: none;
@@ -72,7 +71,7 @@ li, a, #cart {
 }
 
 #cart {
-    margin: 3em 3em;
+    margin: 1em 3em;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -84,9 +83,40 @@ li, a, #cart {
 }
 
 .order {
-
+    display: grid;
+    grid-template-rows: minmax(2em, 3em);
+    justify-items: center;
 }
 
+button {
+    border-radius: 1em;
+    border: 2px solid var(--bg-color);
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+.menu-items {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2em;
+    overflow: hidden;
+    /* visual border */
+    border: 1px black solid;
+    width: 100%;
+    padding: 0;    
+}
+
+.menu {
+    text-align: center;
+}
+
+img {
+    width: 10em;
+    height: 7em;
+    border-radius: 5px;
+}
+
+/* wavy border for menu */
 .wavy {
     
 }
