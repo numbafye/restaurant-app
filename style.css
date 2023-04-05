@@ -74,8 +74,8 @@ section {
     padding: 3em;
 }
 
-.container {
-    margin: 7em 2em;
+.container-fluid {
+margin-top: 5em;
 }
 
 h1 {
