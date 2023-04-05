@@ -36,7 +36,7 @@ header {
 section {
     /* visual border */
     border: 1px black solid;
-    padding: 5em;
+    padding: 3em;
 }
 
 h1 {
