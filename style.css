@@ -29,7 +29,7 @@ header {
     width: 100%;
     position: fixed;
     top: 0px;
-    background-color: var(--bg-color);
+    background-color: var(--accent-color);
     overflow: hidden;
 }
 
@@ -39,13 +39,14 @@ header {
     margin-top: 5px;
     height: auto;
     border-radius: 10em;
+    border: ridge hsl(215,59%,9%)  1px;
 }
 
 .nav-list{
       display: flex;
       gap: 10px;
       padding-top: 25px;
-    justify-content: center;     
+    justify-content: center;    
 }
 
 li {
@@ -69,7 +70,7 @@ li, a, #cart {
 /* PAGE CONTENT */
 section {
     /* visual border */
-    border: 1px black solid;
+    /* border: 1px black solid; */
     padding: 3em;
 }
 
@@ -87,7 +88,16 @@ h1 {
     display: grid;
     grid-template-rows: minmax(2em, 3em);
     justify-items: center;
+    background: linear-gradient(to bottom, var(--bg-color), white)
     /* add bg svg */
+}
+
+.pick-up {
+    position: relative;
+    left: 12em;
+    bottom: 0em;
+    border-radius: 100em;
+    box-shadow: var(--box-shadow);
 }
 
 button {
@@ -106,10 +116,16 @@ button {
     /* visual border */
     border: 1px black solid;
     width: 100%;
-    padding: 0;    
+    padding: 0;  
+    padding-left: 7em;  
 }
 
 .menu {
+    text-align: center;
+}
+
+.more {
+    display: block;
     text-align: center;
 }
 
@@ -121,6 +137,21 @@ img {
 
 /* wavy border for menu in index.html */
 .wavy {
+    background: linear-gradient(
+        to bottom,
+        var(--bg-color) 75%,
+        var(--primary-color) );
+
+        --mask:
+        radial-gradient(63.09px at 50% 85.50px,#000 99%,#0000 101%) calc(50% - 60px) 0/120px 51% repeat-x,
+        radial-gradient(63.09px at 50% -55.5px,#0000 99%,#000 101%) 50% 30px/120px calc(51% - 30px) repeat-x,
+        radial-gradient(63.09px at 50% calc(100% - 85.50px),#000 99%,#0000 101%) calc(50% - 60px) 100%/120px 51% repeat-x,
+        radial-gradient(63.09px at 50% calc(100% + 55.50px),#0000 99%,#000 101%) 50% calc(100% - 30px)/120px calc(51% - 30px) repeat-x;
+      -webkit-mask: var(--mask);
+              mask: var(--mask);
+}
+
+.deals {
     
 }
 
@@ -135,7 +166,35 @@ img {
     padding-top: 8em;
 }
 
+/* FOOD OPTION PAGES */
+#menu-container {
+    margin-top: 9em;
+    padding: 0;
+}
 
+.container {
+    margin-right: 2em;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9em;
+}
+
+.item {
+    border: 1px solid black;
+    border-radius: 10em;
+    padding: 5px;
+    text-align: center;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
 /* mask imgs in menu to fade overflow */
 /* https://pqina.nl/blog/fade-out-overflow-using-css-mask-image/ */
 
