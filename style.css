@@ -31,6 +31,7 @@ header {
     top: 0px;
     background-color: var(--accent-color);
     overflow: hidden;
+    z-index: 1;
 }
 
 #logo {
@@ -159,21 +160,19 @@ img {
 
 #menu-option {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 5em;
-    row-gap: 10em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
     padding-top: 8em;
 }
 
 /* FOOD OPTION PAGES */
 #menu-container {
-    margin-top: 9em;
+    margin-top: 10em;
     padding: 0;
 }
 
 .container {
-    margin-right: 2em;
+
 }
 
 .menu-list {
@@ -189,12 +188,19 @@ img {
     text-align: center;
 }
 
+/* footer navbar */
 .foot {
+    background-color: var(--accent-color);
+    padding-bottom: 0.3em;
+}
+
+.navbar {
     display: flex;
     justify-content: space-around;
-    background-color: var(--accent-color);
     color: var(--primary-color);
 }
+
+
 /* mask imgs in menu to fade overflow */
 /* https://pqina.nl/blog/fade-out-overflow-using-css-mask-image/ */
 
