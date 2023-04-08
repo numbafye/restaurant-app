@@ -95,7 +95,9 @@ h1 {
 
 .pick-up {
     position: relative;
-    left: 12em;
+    width: 9em;
+    height: auto;
+    left: 7em;
     bottom: 0em;
     border-radius: 100em;
     box-shadow: var(--box-shadow);
@@ -109,16 +111,45 @@ button {
     font-size: 1.2em;
 }
 
+/* deal flash */
+
+.new-meal {
+    text-align: center;
+    padding: 0;
+    /* border: black solid 1px; */
+
+}
+
+.new-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15em;
+    padding: 2em;
+}
+
+.new-text {
+    /* border: black solid 1px; */
+    /* padding-top: 1em; */
+    /* margin-right: 20em; */
+    text-align: left;
+}
+
+.pizza-burg {
+    background-image: url(assets/new-food.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 1em;
+}
+
 .menu-items {
     display: flex;
     justify-content: flex-start;
-    gap: 2em;
+    gap: 3em;
     overflow: hidden;
     /* visual border */
-    border: 1px black solid;
-    width: 100%;
+    /* border: 1px black solid; */
+    width: 60%;
     padding: 0;  
-    padding-left: 7em;  
 }
 
 .menu {
@@ -126,8 +157,8 @@ button {
 }
 
 .more {
-    display: block;
     text-align: center;
+    margin-bottom: 2em;
 }
 
 img {
@@ -144,12 +175,20 @@ img {
         var(--primary-color) );
 
         --mask:
-        radial-gradient(63.09px at 50% 85.50px,#000 99%,#0000 101%) calc(50% - 60px) 0/120px 51% repeat-x,
-        radial-gradient(63.09px at 50% -55.5px,#0000 99%,#000 101%) 50% 30px/120px calc(51% - 30px) repeat-x,
-        radial-gradient(63.09px at 50% calc(100% - 85.50px),#000 99%,#0000 101%) calc(50% - 60px) 100%/120px 51% repeat-x,
-        radial-gradient(63.09px at 50% calc(100% + 55.50px),#0000 99%,#000 101%) 50% calc(100% - 30px)/120px calc(51% - 30px) repeat-x;
-      -webkit-mask: var(--mask);
-              mask: var(--mask);
+    radial-gradient(30.00px at 50% calc(100% - 30.00px),#000 99%,#0000 101%) calc(50% - 60px) 0/120px 100%,
+    radial-gradient(30.00px at 50% calc(100% + 0.00px),#0000 99%,#000 101%) 50% calc(100% - 30px)/120px 100% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+
+    /* border: 1px black solid; */
+    /* margin-top: 5em; */
+}
+
+.full-menu {
+    display: flex;
+    gap: 5em;
+    align-items: center;
+    padding: 2em;
 }
 
 .deals {
