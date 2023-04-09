@@ -165,12 +165,34 @@ button {
     display: flex;
     justify-content: flex-start;
     gap: 3em;
-    overflow: hidden;
+    overflow-x: scroll;
     /* visual border */
     /* border: 1px black solid; */
     width: 60%;
-    padding: 0;  
+    padding: 0; 
 }
+
+.menu::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #aaa; 
+    border-radius: 100em;
+
+  }
+
+  .menu::-webkit-scrollbar-track {
+    background-color: var(--primary-color); 
+    border-radius: 100em;
+
+  }
+
+  .menu::-webkit-scrollbar-thumb {
+    width: 5px;
+    height: 5px;
+    background-color: #aaa;
+    border-radius: 100em;
+
+  }
 
 .menu-items {
     text-align: center;
@@ -202,7 +224,7 @@ button {
     }
 
     .more {
-        padding-top: 50em;
+        padding-top: 60em;
     }
 
 }
@@ -210,12 +232,16 @@ button {
 .more {
     text-align: center;
     margin-bottom: 2em;
+    z-index: 100;
+    position: relative;
+    right: 10em;
 }
 
 img {
     width: 10em;
     height: 7em;
     border-radius: 5px;
+    border: 1px white groove;
 }
 
 /* wavy border for menu in index.html */
