@@ -83,6 +83,10 @@ li, a, #cart {
     color: var(--primary-color);
 }
 
+li:hover, a:hover, #cart:hover {
+    color: var(--bg-color)
+}
+
 #cart {
     margin: 1em 3em;
     background-color: transparent;
@@ -111,13 +115,12 @@ h1 {
     display: grid;
     grid-template-rows: minmax(2em, 3em);
     justify-items: center;
-    background: linear-gradient(to bottom, var(--bg-color), white)
-    /* add bg svg */
+    background: linear-gradient( to left, var(--bg-color), white);
 }
 
 .pick-up {
     position: relative;
-    width: 9em;
+    width: 8em;
     height: auto;
     left: 7em;
     bottom: 0em;
@@ -133,7 +136,7 @@ button {
     font-size: 1.2em;
 }
 
-/* deal flash */
+/* store flash */
 
 .new-meal {
     text-align: center;
@@ -147,6 +150,8 @@ button {
     grid-template-columns: 1fr 1fr;
     /* grid-template-rows: 15em; */
     padding: 2em;
+    /* border: black 1px solid; */
+    margin: 2em;
 }
 
 .new-text {
@@ -161,12 +166,17 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1em;
-    padding-bottom: 10em;
+    padding-bottom: 15em;
 }
 
 @media (max-width: 500px) {
     .pizza-burg {
         background-size: cover;
+    }
+
+    .new-content {
+        padding: 0;
+        padding-bottom: 2em;
     }
 
     h3 {
@@ -220,10 +230,32 @@ button {
     text-align: center;
 }
 
-@media (max-width: 600px) {
+.more {
+    margin-top: 2em;
+    z-index: 100;
+    position: relative;
+    padding: 2em;
+    right: 5.5em;
+}
+
+.more a {
+    color: var(--accent-color);
+}
+
+.more a:hover {
+    color: var(--primary-color);
+}
+
+@media (max-width: 780px) {
 
     .full-menu {
         gap: 1em;
+        padding: 0;
+    }
+
+    .wavy h2 {
+        padding: 0;
+        margin: 0;
     }
     
     .menu {
@@ -233,11 +265,15 @@ button {
         overflow: visible;
         /* visual border */
         /* border: 1px black solid; */
-        padding-bottom: 1em;  
+        margin-left: 2em;
+        padding: 0;  
+
     }
+
     
     .menu-items {
         text-align: center;
+        
     }
 
     img {
@@ -246,17 +282,10 @@ button {
     }
 
     .more {
-        padding-top: 60em;
+        padding-top: 59em;
+        flex-shrink: inherit;
     }
 
-}
-
-.more {
-    text-align: center;
-    margin-bottom: 2em;
-    z-index: 100;
-    position: relative;
-    right: 10em;
 }
 
 img {
@@ -268,8 +297,7 @@ img {
 
 /* wavy border for menu in index.html */
 .wavy {
-    background: white;
-
+    background: linear-gradient( to left, var(--bg-color), white);
 }
 
 @media (max-width: 600px) {
@@ -279,10 +307,6 @@ img {
         padding-bottom: 0;
     }
 
-}
-
-.deals {
-    margin: 2em;
 }
 
 /* MENU PAGE */
@@ -313,20 +337,98 @@ img {
     text-align: center;
 }
 
+/* about */
+.about {
+    margin: 0;
+    background: linear-gradient( to right, var(--bg-color), white);
+}
+
+.sm-logo {
+    float: right;
+    border-radius: 10em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 7.5em;
+    border: none;
+}
+
+@media (max-width: 675px) {
+    .sm-logo {
+       visibility: hidden;
+    }
+
+    .about p {
+        /* border: 1px black solid; */
+        /* margin-right: 10em; */
+        width: 100%;
+    }
+
+    .pick-up {
+        width: 40%;
+    }
+}
+
+
+
+.about p {
+    /* border: 1px black solid; */
+    margin-right: 10em;
+}
+
 /* footer navbar */
 .foot {
     background-color: var(--accent-color);
     padding-bottom: 0.3em;
+    padding-left: 1.2em;
+    margin: 0;
 }
 
 .navbar {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    gap: 4em;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     color: var(--primary-color);
 }
 
+i {
+    cursor: pointer;
+}
 
-/* mask imgs in menu to fade overflow */
-/* https://pqina.nl/blog/fade-out-overflow-using-css-mask-image/ */
+@media (max-width: 280px) {
+    .navbar {
+        width: 100%;
+        padding: 0;
+        gap: 1em;
+    }
 
+    .more {
+        margin-top: 5em;
+        margin-left: 3em;
+    }
 
+    .pick-up {
+        width: 50%;
+        margin-right: 5em;
+    }
+
+    .new-content {
+        margin-left: 1em;
+    }
+
+    .pizza-burg {
+        padding-right: 5em;
+    }
+
+    .new-text {
+        padding-right: 1em;
+    }
+}
+
+/* CAREER PAGE */
+#career-section {
+
+}
