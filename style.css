@@ -331,14 +331,14 @@ img {
 #menu-container {
     padding: 0;
     margin-top: 2.5em;
-    margin-left: 1em;
-    margin-right: 1em;
 }
 
 .menu-list {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .item {
