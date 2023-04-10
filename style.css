@@ -20,6 +20,11 @@ body {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-family: myFont;
     background-color: var(--bg-color);
+    /* FOOTER CSS*/
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 body::-webkit-scrollbar {
@@ -318,16 +323,22 @@ img {
     padding-top: 8em;
 }
 
+#menu-option a:hover {
+    color: black;
+}
+
 /* FOOD OPTION PAGES */
 #menu-container {
-    margin-top: 10em;
     padding: 0;
+    margin-top: 2.5em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .menu-list {
     display: flex;
     flex-direction: column;
-    gap: 9em;
+    gap: 1em;
 }
 
 .item {
@@ -335,6 +346,17 @@ img {
     border-radius: 10em;
     padding: 5px;
     text-align: center;
+}
+
+.food-pics {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.food-pics div {
+    border: black 1px solid;
+    padding: 1em;
 }
 
 /* about */
@@ -378,11 +400,12 @@ img {
 }
 
 /* footer navbar */
+
 .foot {
     background-color: var(--accent-color);
     padding-bottom: 0.3em;
     padding-left: 1.2em;
-    margin: 0;
+    margin-top: auto;
 }
 
 .navbar {
