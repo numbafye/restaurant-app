@@ -141,6 +141,10 @@ button {
     font-size: 1.2em;
 }
 
+button:hover {
+    font-size: 1.18em;
+}
+
 /* store flash */
 
 .new-meal {
