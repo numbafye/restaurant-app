@@ -251,6 +251,10 @@ button {
     color: var(--primary-color);
 }
 
+.menu-items:hover {
+    color: var(--primary-color)
+}
+
 @media (max-width: 780px) {
 
     .full-menu {
@@ -277,8 +281,7 @@ button {
 
     
     .menu-items {
-        text-align: center;
-        
+        text-align: center;   
     }
 
     img {
@@ -403,7 +406,7 @@ img {
 
 .foot {
     background-color: var(--accent-color);
-    padding-bottom: 0.3em;
+    padding-bottom: 0.4em;
     padding-left: 1.2em;
     margin-top: auto;
 }
@@ -452,3 +455,64 @@ i {
 }
 
 /* CAREER PAGE */
+
+.section {
+    margin-inline: 2em;
+    color: white;
+    background-color: var(--accent-color);
+    opacity: 85%;
+    padding: 0 1em 0 1em;
+}
+
+.apply {
+    display: block;
+    margin-inline: auto;
+}
+
+#career {
+    background-image: url(assets/burger-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Contact Page */
+
+.contact a:hover {
+    color: blue;
+}
+
+form {
+    display: grid;
+    margin-inline: auto;
+    width: 25em;
+}
+
+.form-table {
+    margin-inline: auto;
+    text-align: center;
+    display: block;
+    padding-bottom: 1.5em;
+}
+
+label {
+    text-align: center;
+}
+
+input {
+    margin-inline: auto;
+    width: 20em;
+    
+}
+
+textarea {
+    margin-inline: auto;
+    width: 20em;
+}
+
+form button {
+    width: 15em;
+    margin-inline: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+

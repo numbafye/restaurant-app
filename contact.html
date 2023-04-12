@@ -17,14 +17,32 @@
                     <ul class="nav-list">
                         <li><a href="menu.html">Menu</a></li> 
                         <li><a href="career.html">Career</a></li> 
-                        <li><a href="about.html">About</a></li> 
+                        <li><a href="contact.html">Contact</a></li> 
                     </ul>
                 </nav>
             <button title="Cart" id="cart" type="button"><i class="fa-solid fa-cart-shopping"></i></i>
         </header>
 
         <main class="container-fluid">
+            <section class="contact">
+                <h2>Contact Us</h2>
+                <p>Need to get in touch with us? Either fill out the form with your inquiry or give us a call at <a href="#">(973)-999-9991.</a></p>
+            </section>
 
+            <form class="form">
+                <div class="form-table">
+                    <label for="fname">First Name</label> <br>
+                    <input type="text" name="fname" required> <br>
+                
+                    <label for="lname">Last Name</label> <br>
+                    <input type="text" name="lname" required> <br>
+                
+                    <label for="email">Email</label> <br>
+                    <input type="email" name="email" id="email-form" required> 
+             </div>
+                <textarea name="message" id="message" rows="8" cols="30" placeholder="Message us..."></textarea>
+                <button type="submit" name="message">Submit</button>
+            </form>
 
         </main>
 
@@ -32,7 +50,7 @@
         <footer class="foot">
             <nav>
                 <ul class="navbar">
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     <li><a href="index.html"><i class="fa-regular fa-copyright"></i>2023 Burgiza</a></li>
                     <li> 973-999-9991</li>
                     <li><i href="#" class="fa-brands fa-instagram"></i> <i href="#" class="fa-brands fa-facebook"></i></li>
