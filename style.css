@@ -142,7 +142,7 @@ button {
 }
 
 button:hover {
-    font-size: 1.18em;
+    transform: translateY(-1px);
 }
 
 /* store flash */
