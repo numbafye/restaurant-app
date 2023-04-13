@@ -362,8 +362,32 @@ img {
 }
 
 .food-pics div {
-    border: black 1px solid;
+    /* border: black 1px solid; */
+    box-shadow: 2px 2px 8px 2px rgba(75, 3, 3, 0.75);
     padding: 1em;
+    margin-inline: 15em;
+}
+
+@media (max-width: 900px) {
+    .food-pics div {
+        margin-inline: 1em;
+    }
+}
+
+@media (max-width: 345px) {
+    .menu-list img {
+        width: 5em;
+    }
+}
+
+.food-pics div h6 {
+    float: right;
+}
+
+.food-pics div h6:hover {
+    color: var(--primary-color);
+    transform: translate(1px);
+    cursor: pointer;
 }
 
 /* about */
@@ -455,6 +479,10 @@ i {
 
     .new-text {
         padding-right: 1em;
+    }
+
+    h2 {
+        font-size: medium;
     }
 }
 
