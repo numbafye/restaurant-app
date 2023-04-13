@@ -380,14 +380,18 @@ img {
     }
 }
 
-.food-pics div h6 {
+.food-pics div button {
     float: right;
 }
 
-.food-pics div h6:hover {
-    color: var(--primary-color);
+.food-pics div button:hover {
+    color: var(--accent-color);
     transform: translate(1px);
     cursor: pointer;
+}
+
+.food-pics div button:active {
+    transform: translateY(2px);
 }
 
 /* about */
@@ -483,6 +487,7 @@ i {
 
     h2 {
         font-size: medium;
+        font-weight: 700;
     }
 }
 
@@ -548,3 +553,11 @@ form button {
     margin-bottom: 1em;
 }
 
+/* ADD TO CART COUNTER */
+.clicks {
+    color: white;
+    position: absolute;
+    right: 3.5em;
+    top: 1em;
+    /* visibility: hidden; */
+}
