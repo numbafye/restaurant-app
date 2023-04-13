@@ -564,7 +564,7 @@ form button {
     position: absolute;
     right: 3.5em;
     top: 1em;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 
 @media (max-width: 400px) {
